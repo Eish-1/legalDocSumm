@@ -1,0 +1,26 @@
+
+[project]
+name = "legal-doc-summarizer"
+version = "0.1.0"
+description = "Summarizes legal documents using Groq LLM."
+authors = [{ name = "Your Name", email = "you@example.com" }] # Update with your details
+readme = "README.md"
+requires-python = ">=3.9" # Match .python-version or adjust as needed
+dependencies = [
+    "streamlit",
+    "langchain",
+    "langchain-groq",
+    "langchain-huggingface",
+    "langchain-community", # Includes FAISS, CharacterTextSplitter etc.
+    "pypdf2",
+    "python-dotenv",
+    "sentence-transformers", # Needed by HuggingFaceEmbeddings
+    # Add other specific langchain components if needed, e.g. langchain-text-splitters
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv] # Optional: Add if you want specific uv settings
+# python = "3.11" # Example: Pin python version for uv
