@@ -17,7 +17,7 @@ processes the content, and provides a summarized version of the document without
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/legal-docs-summarizer.git
+   git clone https://github.com/yourusername/legalDocSumm.git
 
 
 Navigate to the project directory:
